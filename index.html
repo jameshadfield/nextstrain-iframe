@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Embedding nextstrain in an existing website</title>
+</head>
+<body>
+  <h1>Embedding nextstrain in an existing website</h1>
+  <p>
+    A simple example of how to embed a nextstrain visualisation inside an
+    already existing website using iFrames.
+    This relies on <a href="https://github.com/nextstrain/auspice/pull/884">auspice PR #884</a>
+    which is deployed as a review app <a href="https://auspice-iframe-mtwbapzp2abw69e.herokuapp.com">here</a>.
+  </p>
+
+  <p>
+    We'll set a "simple" iframe to nextstrain.org/zika with URL queries which close the sidebar, hide the header+footer, and only show the tree.
+    Note that the iframe size is hardcoded to 600x800 in this example.
+  </p>
+
+  <iframe src="https://auspice-iframe-mtwbapzp2abw69e.herokuapp.com/zika?onlyPanels&sidebar=closed&d=tree" title="nextstrain / zika" width="800" height="600" frameborder="0"></iframe>
+
+  <p>Content after the iFrame</p>
+</body>
+</html>
